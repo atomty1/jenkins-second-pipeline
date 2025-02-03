@@ -11,12 +11,12 @@ pipeline{
         }
         stage("Install dependencies"){
             steps{
-                sh 'npm install'
+                sh 'cd jkn && npm install'
             }
         }
         stage("Start node project"){
             steps{
-                sh 'npm start'
+                sh 'cd jkn && npm start'
             }
         }
 
