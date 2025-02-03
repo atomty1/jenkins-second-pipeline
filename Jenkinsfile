@@ -6,6 +6,7 @@ pipeline{
     stages{
         stage("Clone node repository"){
             steps {
+                sh 'rmdir jkn'
                 sh 'git clone https://github.com/atomty1/jkn.git'
             }
         }
