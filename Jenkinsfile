@@ -20,6 +20,12 @@ pipeline{
                 sh 'cd jkn && npm start'
             }
         }
+        stage("End"){
+            steps{
+                sh 'echo "success"'
+            }
+        }
+
 
     }
 }
